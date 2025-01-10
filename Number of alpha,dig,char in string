@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+//Write a C program to find total number of alphabets, digits or special character in a string.
+char str1[50],ch;
+int i,alphabets,digits,others;
+printf("Enter any string: ");
+gets(str1);
+i=alphabets=digits=others=0;
+while ((ch=str1[i])!='\0') {
+
+ if((ch>='A'&&ch<='Z')||(ch>='a'&&ch<='z'))
+    alphabets++;
+ else if(ch>='0'&&ch<='9')
+ digits++;
+ else
+    others++;
+    i++;
+}
+
+printf("Alphabets: %d\n",alphabets);
+printf("Digits: %d\n",digits);
+printf("Special character: %d\n",others);
+return 0;
+}
