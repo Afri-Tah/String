@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+//Write a C program to copy one string to another string using loop.
+char str1[50];
+char str2[50];
+int j;
+printf("Enter any string: ");
+gets(str1);
+
+j=0;
+while (str1[j]!='\0') {
+    str2[j]=str1[j];
+
+    j++;
+
+}
+str2[j]='\0';
+printf("String 1: %s\n",str1);
+printf("String 2: %s\n",str2);
+return 0;
+}
