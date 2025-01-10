@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+//Write a C program to find last occurrence of a character in a given string.
+char str1[50],key;
+int i=0,lastIndex=-1;
+printf("Enter any string: ");
+gets(str1);
+printf("Enter a character: ");
+scanf("%c",&key);
+while(str1[i]!='\0') {
+    if (str1[i]==key)
+    lastIndex=i;
+    i++;
+
+}
+printf("%c is found at the %d index",key,lastIndex);
+
+return 0;
+}
